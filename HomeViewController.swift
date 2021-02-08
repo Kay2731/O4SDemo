@@ -27,16 +27,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         collectionView.delegate = self
         callViewModelForUIUpdate()
-//        collectionView.dataSource = self
-        
-//        if let layout = collectionView?.collectionViewLayout as? UICollectionViewFlowLayout{
-//                layout.minimumLineSpacing = 10
-//                layout.minimumInteritemSpacing = 10
-//                layout.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
-//                let size = CGSize(width:(collectionView!.bounds.width-30)/2, height: 250)
-//                layout.itemSize = size
-//        }
-        // Do any additional setup after loading the view.
+ 
     }
 
     func callViewModelForUIUpdate(){
@@ -83,11 +74,7 @@ extension HomeViewController:   UICollectionViewDelegateFlowLayout,UICollectionV
         return 10
     }
  
-//    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-//            if indexPath.row == numberofitem.count - 1 {  //numberofitem count
-//                updateNextSet()
-//            }
-//    }
+ 
  
 
 }
